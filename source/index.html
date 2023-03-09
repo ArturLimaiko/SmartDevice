@@ -13,8 +13,35 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <div class="container">
+          <nav class="header__nav">
+            <a href="index.html" class="header__logo">
+              <picture>
+                <source media="(max-width: 767px)" width="35" height="35" srcset="img/svg/logo-mobile.svg">
+                <img class="header__logo-image" src="img/svg/logo-desktop.svg" alt="" width="215" height="55">
+              </picture>
+            </a>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="mailto:info@sd.ru">
+                  <svg class="header__icon" width="20" height="20" aria-label="Иконка почты">
+                    <use xlink:href="img/sprite.svg#email"></use>
+                  </svg>
+                  <nav class="header__text">info@sd.ru</nav>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="tel:+74950005252">
+                  <svg class="header__icon" width="20" height="20" aria-label="Иконка почты">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <nav class="header__text">+7 (495) 000 52 52</nav>
+                </a>
+              </li>
+            </ul>
+            <button class="header__button" type="button">Заказать звонок</button>
+          </nav>
         </div>
       </header>
       <main>
