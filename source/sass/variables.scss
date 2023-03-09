@@ -6,12 +6,25 @@
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-white-transparent:           rgba(255, 255, 255, 0.7);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
+$color-alice-blue:                  #F2F5F6;
+$color-alice-blue-light:            #F8FDFF;
+$color-whisper:                     #EBEBEB;
+$color-deep-sky-blue:               #00B2FF;
+$color-deep-sky-blue-light:         #53d9fa;
+$color-deep-sky-blue-dark:          #006eff;
+$color-deep-pearl:                  #041827;
+$color-deep-pearl-transparent:      rgba(4, 20, 39, 0.15);
+$color-aluminium:                   #888b8d;
+$color-aluminium-transparent:       rgba(136,139,141, 0.50);
+
+
 
 // Gradient
 
@@ -28,6 +41,10 @@ $fz-default:                        16px;
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+$ff-roboto-condensed:               "Roboto Condensed", "Helvetica", sans-serif;
+
+$ff-mono:                           "PTMono", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
