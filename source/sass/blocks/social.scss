@@ -1,0 +1,15 @@
+.social__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+.social__icon {
+  fill: $color-alice-blue-light;
+}
+
+.social__item {
+  margin-left: 20px;
+}

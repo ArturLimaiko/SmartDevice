@@ -427,7 +427,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "PTMono", "Arial", sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
   color: #041827;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1328,7 +1328,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #F2F5F6;
+  color: #f2f5f6;
 }
 
 .header__link:hover {
@@ -1345,7 +1345,7 @@ button,
 
 .header__link:hover .header__icon,
 .header__link:focus .header__icon {
-  fill: #F2F5F6;
+  fill: #f2f5f6;
 }
 
 .header__link:active .header__icon {
@@ -1354,7 +1354,7 @@ button,
 
 .header__icon {
   margin-right: 15px;
-  fill: #00B2FF;
+  fill: #00b2ff;
 }
 
 .header__button {
@@ -1367,9 +1367,9 @@ button,
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border: 1px solid #F2F5F7;
+  border: 1px solid #f2f5f7;
   border-radius: 3px;
-  color: #F2F5F7;
+  color: #f2f5f7;
   padding: 10px 15px;
   background-color: transparent;
   cursor: pointer;
@@ -1396,6 +1396,89 @@ button,
 .header__button:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.footer {
+  background-color: #041827;
+  padding: 57px 0 55px 0;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer h2 {
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__list:nth-child(1) {
+  padding-right: 30px;
+}
+
+.footer__item a {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+
+.footer__contacts {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 135%;
+  width: 345px;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+.social__icon {
+  fill: #f8fdff;
+}
+
+.social__item {
+  margin-left: 20px;
 }
 
 /* @mixin hover-focus {
