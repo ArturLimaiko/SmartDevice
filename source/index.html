@@ -88,7 +88,7 @@
       <main></main>
       <!-- Футер -->
       <footer class="footer">
-        <div class="container footer__wrapper">
+        <div class="footer__wrapper container ">
           <div class="social">
             <a class="social__logo" href="index.html">
               <img
@@ -138,64 +138,61 @@
               </li>
             </ul>
           </div>
-
-          <!-- Разделы сайта -->
-          <div class="footer__nav accordion">
-            <h2>Разделы сайта</h2>
-            <div class="footer__box">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a class="footer__link" href="">О Компании</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Продукты</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Производство печатных плат</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Монтаж печатных плат</a>
-                </li>
-              </ul>
-              <ul class="footer__list footer__list--second">
-                <li class="footer__item">
-                  <a class="footer__link" href="">Комплектующие</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Доставка</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">Контакты</a>
-                </li>
-              </ul>S
+          <section class="accordion" data-accordion="parent" data-single data-close-inner>
+            <div class="accordion__element" data-accordion="element" is-active>
+              <h3>Разделы сайта</h3>
+              <button class="accordion__button accordion__button--active" type="button" data-accordion="button">
+                <span class="visually-hidden">Открыть/Закрыть</span>
+              </button>
+              <div class="accordion__content" data-accordion="content">
+                <ul class="accordion__list">
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">О Компании</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">Продукты</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">Монтаж печатных плат</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">Доставка</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-          </div>
-
-          <!-- Адрес -->
-          <div class="footer__contacts">
-            <h2>Наш офис</h2>
-            <ul class="footer__contacts">
-              <li class="footer__item">
-                <p>г. Мытищи, Олимпийский проспект, д.10</p>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="tel:+74955894050">
-                  +7 (495) 589-40-50</a
-                >
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="tel:+79253895829">
-                  +7 (925) 389-58-29</a
-                >
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="tel:+79253647813">
-                  +7 (925) 364-78-13</a
-                >
-              </li>
-            </ul>
-          </div>
+            <div class="accordion__element" data-accordion="element" is-active>
+              <h3>Наш офис</h3>
+              <button class="accordion__button" type="button" data-accordion="button">
+                <span class="visually-hidden">Открыть/Закрыть</span>
+              </button>
+              <div class="accordion__content" data-accordion="content">
+                <ul class="accordion__list">
+                  <li class="accordion__item">
+                    <p>г. Мытищи, Олимпийский проспект, д.10</p>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="accordion__item">
+                    <a class="accordion__link" href="#">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
       </footer>
 
