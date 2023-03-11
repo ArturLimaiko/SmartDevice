@@ -9,16 +9,22 @@
 }
 
 .footer__wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding: 50px 200px;
+  margin: 0 auto;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    display: inline-block;
+    padding: 0;
+  }
+
   @media (max-width: ($vp-768 - 1px)) {
     padding: 0;
   }
 }
 
 .footer__box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-
   @media (max-width: ($vp-1920 - 1px)) {
     display: flex;
     flex-direction: column;
@@ -76,7 +82,7 @@
   width: 345px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    width:100%;
+    width: 100%;
   }
 }
 
