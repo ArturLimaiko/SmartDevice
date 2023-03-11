@@ -1,0 +1,110 @@
+.general {
+  padding: 200px 475px 280px;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%,rgba(25, 32, 36, 0) 100%) ,url("../../img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 58%;
+  background-color: $color-deep-pearl;
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    padding: 180px 50px 205px;
+    margin-top: -95px;
+    background-position: 18%;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding: 138px 25px 190px;
+    background-position: 25%;
+  }
+}
+.general h2 {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+  padding: 0 0 40px 0;
+  margin: 0;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    padding: 0 0 20px 0;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.general p {
+  font-family: $ff-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-alice-blue;
+  margin: 0;
+  padding-bottom: 40px;
+  max-width: 685px;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    padding-bottom: 50px;
+    max-width: 670px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    font-size: 14px;
+    max-width: 271px;
+  }
+}
+
+.genaral__button {
+  background-color: $color-deep-sky-blue;
+  padding: 15px 27px;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-alice-blue-lightest;
+  border-radius: 3px;
+  display: inline-block;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    width: 100%;
+    margin: 0;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.general__text {
+  @media (max-width: ($vp-768 - 1px)) {
+    display: none;
+  }
+}
+
+.general__short {
+    display: none;
+
+  @media (max-width: ($vp-768 - 1px)) {
+    display: block;
+  }
+}

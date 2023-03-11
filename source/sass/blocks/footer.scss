@@ -11,7 +11,7 @@
 .footer__wrapper {
   display: grid;
   grid-template-columns: 300px 1fr;
-  padding: 50px 200px;
+  padding: 50px 350px;
   margin: 0 auto;
 
   @media (max-width: ($vp-1920 - 1px)) {
