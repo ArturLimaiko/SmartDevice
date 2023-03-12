@@ -58,12 +58,12 @@
 
   @media (max-width: ($vp-1920 - 1px)) {
     padding-bottom: 50px;
-    max-width: 670px;
+    min-width: 670px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
     font-size: 14px;
-    max-width: 271px;
+    min-width: 271px;
   }
 }
 
