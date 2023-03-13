@@ -1,12 +1,12 @@
 .advantages {
-  padding: 120px 348px;
+  padding: 120px 348px 60px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 80px 50px;
+    padding: 80px 50px 40px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 50px 25px;
+    padding:25px;
   }
 }
 
@@ -17,7 +17,6 @@
   gap: 31px;
   list-style-type: none;
   margin: 0 auto;
-  max-width: 1222px;
   padding: 0;
   grid-template-columns: 1fr 1fr;
 

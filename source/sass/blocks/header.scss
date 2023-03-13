@@ -129,15 +129,16 @@
   cursor: pointer;
 
   @include hover-focus {
-    opacity: 0.8;
-    color: $color-deep-sky-blue-light;
+    background-color: $color-deep-sky-blue-light;
     border: 1px solid $color-deep-sky-blue-light;
+    color: $color-alice-blue;
   }
 
   @include active {
     opacity: 1;
-    color: $color-deep-sky-blue-dark;
+    background-color: $color-deep-sky-blue-dark;
     border: 1px solid $color-deep-sky-blue-dark;
+    color: $color-alice-blue;
   }
 
   &:disabled {

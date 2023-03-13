@@ -1333,11 +1333,11 @@ button,
 }
 
 .header__link:hover {
-  color: #53d9fa;
+  color: rgba(83, 217, 250, 0.7137254902);
 }
 
 .header__link.focus-visible:focus {
-  color: #53d9fa;
+  color: rgba(83, 217, 250, 0.7137254902);
 }
 
 .header__link:active {
@@ -1377,21 +1377,22 @@ button,
 }
 
 .header__button:hover {
-  opacity: 0.8;
-  color: #53d9fa;
-  border: 1px solid #53d9fa;
+  background-color: rgba(83, 217, 250, 0.7137254902);
+  border: 1px solid rgba(83, 217, 250, 0.7137254902);
+  color: #f2f5f6;
 }
 
 .header__button.focus-visible:focus {
-  opacity: 0.8;
-  color: #53d9fa;
-  border: 1px solid #53d9fa;
+  background-color: rgba(83, 217, 250, 0.7137254902);
+  border: 1px solid rgba(83, 217, 250, 0.7137254902);
+  color: #f2f5f6;
 }
 
 .header__button:active {
   opacity: 1;
-  color: #006eff;
+  background-color: #006eff;
   border: 1px solid #006eff;
+  color: #f2f5f6;
 }
 
 .header__button:disabled {
@@ -1456,12 +1457,27 @@ button,
   display: inline-block;
 }
 
+.genaral__button:hover {
+  background-color: rgba(83, 217, 250, 0.7137254902);
+  color: #f2f5f6;
+}
+
+.genaral__button.focus-visible:focus {
+  background-color: rgba(83, 217, 250, 0.7137254902);
+  color: #f2f5f6;
+}
+
+.genaral__button:active {
+  background-color: #006eff;
+  color: #f2f5f6;
+}
+
 .general__short {
   display: none;
 }
 
 .advantages {
-  padding: 120px 348px;
+  padding: 120px 348px 60px;
 }
 
 .advantages__list {
@@ -1475,7 +1491,6 @@ button,
   gap: 31px;
   list-style-type: none;
   margin: 0 auto;
-  max-width: 1222px;
   padding: 0;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -1531,6 +1546,88 @@ button,
   margin: 0;
   padding-bottom: 15px;
   padding-top: 20px;
+}
+
+.about {
+  position: relative;
+  padding: 60px 350px 100px;
+}
+
+.about::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/2022.png");
+  width: 150px;
+  height: 320px;
+  top: 57px;
+  left: 325px;
+}
+
+.about__box {
+  margin-left: 250px;
+  min-height: 320px;
+}
+
+.about h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+  padding-bottom: 15px;
+}
+
+.about p {
+  margin: 0;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+  padding-bottom: 20px;
+}
+
+.about__button {
+  min-width: 180px;
+  display: inline-block;
+  padding: 13px 13px 14px 12px;
+  border: 1px solid #00b2ff;
+  background-color: #ffffff;
+  color: #00b2ff;
+  border-radius: 3px;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.about__button:hover {
+  border: 1px solid rgba(83, 217, 250, 0.7137254902);
+  background-color: rgba(83, 217, 250, 0.7137254902);
+  color: #f2f5f6;
+}
+
+.about__button.focus-visible:focus {
+  border: 1px solid rgba(83, 217, 250, 0.7137254902);
+  background-color: rgba(83, 217, 250, 0.7137254902);
+  color: #f2f5f6;
+}
+
+.about__button:active {
+  background-color: #006eff;
+  border: 1px solid #006eff;
+  color: #f2f5f6;
+}
+
+.about__more {
+  display: none;
 }
 
 .footer {
@@ -1771,7 +1868,7 @@ button,
   }
 
   .advantages {
-    padding: 80px 50px;
+    padding: 80px 50px 40px;
   }
 
   .advantages__list {
@@ -1789,6 +1886,19 @@ button,
 
   .advantages__item h3 {
     padding-top: 0;
+  }
+
+  .about::before {
+    top: 42px;
+    left: 50px;
+  }
+
+  .about {
+    padding: 40px 50px 50px;
+  }
+
+  .about__box {
+    margin-left: 170px;
   }
 
   .footer {
@@ -1953,7 +2063,7 @@ button,
   }
 
   .advantages {
-    padding: 50px 25px;
+    padding: 25px;
   }
 
   .advantages__list {
@@ -1973,6 +2083,32 @@ button,
 
   .advantages__item h3 {
     font-size: 20px;
+  }
+
+  .about::before {
+    display: none;
+  }
+
+  .about {
+    padding: 25px 25px 80px;
+  }
+
+  .about__box {
+    margin: 0;
+  }
+
+  .about h3 {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
+  .mobile__hidden {
+    display: none;
   }
 
   .footer__wrapper {

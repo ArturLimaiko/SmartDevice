@@ -1,0 +1,116 @@
+.about {
+  position: relative;
+  padding: 60px 350px 100px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/2022.png");
+    width: 150px;
+    height: 320px;
+    top: 57px;
+    left: 325px;
+
+    @media (max-width: ($vp-1920 - 1px)) {
+      top: 42px;
+      left: 50px;
+    }
+
+    @media (max-width: ($vp-768 - 1px)) {
+      display: none;
+    }
+  }
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    padding: 40px 50px 50px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding: 25px 25px 80px;
+  }
+}
+
+.about__box {
+  margin-left: 250px;
+  min-height: 320px;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    margin-left: 170px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    margin: 0;
+  }
+}
+
+.about h3 {
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-deep-pearl;
+  padding-bottom: 15px;
+
+  @media (max-width: ($vp-768 - 1px)) {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}
+
+.about p {
+  margin: 0;
+  font-family: $ff-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-deep-pearl;
+  padding-bottom: 20px;
+
+  @media (max-width: ($vp-768 - 1px)) {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+}
+
+.about__button {
+  min-width: 180px;
+  display: inline-block;
+  padding: 13px 13px 14px 12px;
+  border: 1px solid $color-deep-sky-blue;
+  background-color: $color-default-white;
+  color: $color-deep-sky-blue;
+  border-radius: 3px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include hover-focus {
+    border: 1px solid $color-deep-sky-blue-light;
+    background-color: $color-deep-sky-blue-light;
+    color: $color-alice-blue;
+  }
+
+  @include active {
+    background-color: $color-deep-sky-blue-dark;
+    border: 1px solid $color-deep-sky-blue-dark;
+    color: $color-alice-blue;
+  }
+}
+
+.about__more {
+  display: none;
+}
+
+.mobile__hidden {
+  @media (max-width: ($vp-768 - 1px)) {
+    display: none;
+  }
+}
