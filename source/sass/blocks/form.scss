@@ -137,6 +137,17 @@
   border-radius: 3px;
   border: none;
   min-width: 275px;
+  cursor: pointer;
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    background-color: $color-deep-pearl-darker;
+    box-shadow: $box-shadow-light;
+  }
+
+  &:active::placeholder {
+    color: $color-default-white;
+  }
 
   @media (max-width: ($vp-1920 - 1px)) {
     min-width: 320px;
@@ -164,6 +175,17 @@
     padding: 25px 0 15px 15px;
     width: 100%;
     min-height: 155px;
+    cursor: pointer;
+
+    &:not(:disabled):hover,
+    &:not(:disabled):focus {
+      background-color: $color-deep-pearl-darker;
+      box-shadow: $box-shadow-light;
+    }
+
+    &:active::placeholder {
+      color: $color-default-white;
+    }
 
     @media (max-width: ($vp-768 - 1px)) {
       min-width: 270px;

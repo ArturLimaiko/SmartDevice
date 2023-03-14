@@ -1829,6 +1829,41 @@ button,
   border-radius: 3px;
   border: none;
   min-width: 275px;
+  cursor: pointer;
+}
+
+.form__name input:not(:disabled):hover,
+.form__name input:not(:disabled):focus,
+.form__tel input:not(:disabled):hover,
+.form__tel input:not(:disabled):focus {
+  background-color: rgba(4, 20, 39, 0.5);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+}
+
+.form__name input:active::-webkit-input-placeholder,
+.form__tel input:active::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:active::-moz-placeholder,
+.form__tel input:active::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:active:-ms-input-placeholder,
+.form__tel input:active:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:active::-ms-input-placeholder,
+.form__tel input:active::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__name input:active::placeholder,
+.form__tel input:active::placeholder {
+  color: #ffffff;
 }
 
 .form__name input::-webkit-input-placeholder,
@@ -1869,6 +1904,34 @@ button,
   padding: 25px 0 15px 15px;
   width: 100%;
   min-height: 155px;
+  cursor: pointer;
+}
+
+.form__question textarea:not(:disabled):hover,
+.form__question textarea:not(:disabled):focus {
+  background-color: rgba(4, 20, 39, 0.5);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+}
+
+.form__question textarea:active::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form__question textarea:active::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form__question textarea:active:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__question textarea:active::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__question textarea:active::placeholder {
+  color: #ffffff;
 }
 
 .form__question textarea::-webkit-input-placeholder {
@@ -2157,6 +2220,10 @@ button,
 */
 
 @media (max-width: 1919px) {
+  .container {
+    padding: 0 50px 0 50px;
+  }
+
   .header {
     position: relative;
   }
@@ -2373,17 +2440,7 @@ button,
   }
 }
 
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
 @media (max-width: 1023px) {
-  .container {
-    padding: 0 50px 0 50px;
-  }
-
   .form {
     padding-top: 50px;
     padding-bottom: 125px;
