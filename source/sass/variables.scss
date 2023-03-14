@@ -19,17 +19,20 @@ $color-alice-blue-light: #f8fdff;
 $color-whisper: #ebebeb;
 $color-whisper-darker: #e5e5e5;
 $color-deep-sky-blue: #00b2ff;
+$color-deep-sky-blue-two: #00b3ff;
 $color-deep-sky-blue-light: #53d9fab6;
-$color-deep-sky-blue-lightest : rgba(0, 178, 255, 0.5);
+$color-deep-sky-blue-lightest: rgba(0, 178, 255, 0.5);
 $color-deep-sky-blue-dark: #006eff;
 $color-deep-pearl: #041827;
 $color-deep-pearl-transparent: rgba(4, 20, 39, 0.15);
-$color-aluminium: #888b8d;
-$color-aluminium-transparent: rgba(136, 139, 141, 0.5);
+$color-aluminium: #2b2c2c;
+$color-aluminium-transparent: rgba(22, 22, 22, 0.8);
 
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$box-shadow-dark: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+$box-shadow-light: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
 // Typography
 // ---------------------------------
 

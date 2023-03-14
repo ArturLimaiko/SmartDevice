@@ -68,7 +68,6 @@
   display: block;
   height: 100%;
 
-
   @media (max-width: ($vp-768 - 1px)) {
     min-height: 250px;
   }
@@ -123,6 +122,11 @@
   bottom: 0;
   border-top-left-radius: 3px;
 
+  @media (max-width: ($vp-768 - 1px)) {
+    width: 40px;
+    height: 40px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -133,5 +137,12 @@
     border: solid $color-default-white;
     border-width: 0 1px 1px 0;
     transform: rotate(-45deg);
+
+    @media (max-width: ($vp-768 - 1px)) {
+      top: 40%;
+      left: 40%;
+      width: 5px;
+      height: 5px;
+    }
   }
 }
