@@ -1,0 +1,137 @@
+.services__container {
+  background-color: $color-deep-pearl;
+  padding: 50px 350px 170px;
+  margin: 0 auto;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    padding: 50px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding: 50px 25px 86px;
+  }
+}
+
+.services__desktop {
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  margin: 0;
+  padding-left: 62px;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    padding: 0;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    display: none;
+  }
+}
+
+.services__mobile {
+  @media (max-width: ($vp-768 - 1px)) {
+    display: block;
+    font-family: $ff-roboto-condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140.62%;
+    color: $color-default-white;
+    margin: 0;
+  }
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 0 auto;
+  gap: 85px;
+  padding: 0;
+  padding-top: 50px;
+  max-width: 1220px;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.services__item {
+  position: relative;
+}
+
+.services__link {
+  display: block;
+  height: 100%;
+
+
+  @media (max-width: ($vp-768 - 1px)) {
+    min-height: 250px;
+  }
+
+  @include hover-focus {
+    box-shadow: 0px 0px 23px 10px $color-deep-sky-blue-lightest;
+  }
+
+  @include active {
+    box-shadow: 0px 0px 23px 10px $color-deep-sky-blue-dark;
+    opacity: 0.7;
+  }
+
+  & p {
+    position: absolute;
+    width: 173px;
+    margin: 0;
+    color: $color-default-white;
+    font-family: $ff-roboto-condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    top: 40px;
+    left: 35px;
+
+    @media (max-width: ($vp-768 - 1px)) {
+      font-size: 18px;
+      line-height: 167%;
+      top: 26px;
+      left: 30px;
+    }
+  }
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+
+    @media (max-width: ($vp-768 - 1px)) {
+      height: 250px;
+    }
+  }
+}
+
+.services__button {
+  width: 60px;
+  height: 60px;
+  background-color: $color-deep-sky-blue;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 3px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 45%;
+    left: 45%;
+    border: solid $color-default-white;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-45deg);
+  }
+}
