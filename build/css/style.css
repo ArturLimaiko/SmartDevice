@@ -1826,6 +1826,7 @@ button,
 .form__tel input {
   padding: 15px;
   background-color: rgba(4, 20, 39, 0.15);
+  color: #ffffff;
   border-radius: 3px;
   border: none;
   min-width: 275px;
