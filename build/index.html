@@ -239,22 +239,21 @@
           <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
-            <div class="form__name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-              <label for="name">
+            <div class="form__name" >
+              <label for="name"  data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <span class="visually-hidden">Имя</span>
                 <input id="name" type="text" name="name" placeholder="Имя" required>
               </label>
             </div>
-            <div class="form__tel" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
-              <label for="tel">
+            <div class="form__tel">
+              <label for="tel" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
                 <span class="visually-hidden">Телефон</span>
                 <input id="tel" type="text" name="tel" placeholder="Телефон" required>
               </label>
             </div>
-            <div class="form__question">
+            <div class="form__question" >
               <textarea name="question" placeholder="Ваш вопрос"></textarea>
             </div>
-
             <div class="form__container">
               <button class="form__button" type="submit" >Задать вопрос</button>
             </div>
