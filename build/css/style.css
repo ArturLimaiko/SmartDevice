@@ -704,18 +704,20 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b2ff;
 }
 
 .modal__close-btn {
   position: absolute;
+  content: "";
   top: 22px;
   right: 22px;
   z-index: 1;
   width: 40px;
   height: 40px;
   padding: 0;
-  background: rgba(255, 255, 255, 0);
+  fill: #ffffff;
+  background: rgba(255, 255, 255, 0) center;
   border: none;
   cursor: pointer;
 }
@@ -747,6 +749,47 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal__content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 15px 30px;
+}
+
+.modal__content h2 {
+  display: block;
+  font-family: "Roboto Condensed", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin: 0;
+  font-size: 30px;
+  line-height: 140.62%;
+  padding-bottom: 10px;
+}
+
+.modal__content p {
+  display: block;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.modal__content input {
+  width: 100%;
 }
 
 .custom-input,
@@ -1974,7 +2017,6 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  max-width: 265px;
   cursor: pointer;
   margin-left: 45px;
   margin-top: 15px;

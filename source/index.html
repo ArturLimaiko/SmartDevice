@@ -79,7 +79,7 @@
                 </a>
               </li>
             </ul>
-            <button class="header__button" type="button">
+            <button class="header__button" type="button" href="#" data-open-modal="modal">
               Заказать звонок
             </button>
           </nav>
@@ -93,7 +93,7 @@
       <div class="box">
         <h2>Печатные платы</h2>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="genaral__button" href="#">
+        <a class="genaral__button" >
           <span class="general__text">Получить бесплатную консультацию</span>
           <span class="general__short">Бесплатная консультация</span>
         </a>
@@ -237,7 +237,7 @@
         </div>
         <div class="form__wrapper-validate" data-form-validate>
           <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
-            <h2>Остались вопросы? Задайте их нам!</h2>
+            <h2>Закажите звонок</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="form__name" >
               <label for="name"  data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
@@ -268,158 +268,161 @@
       </section>
     </div>
 
-
-      </main>
-      <!-- Футер -->
-      <footer class="footer">
-        <div class="footer__wrapper container ">
-          <div class="social">
-            <a class="social__logo" href="index.html">
-              <img
-                class="social__image"
-                src="img/svg/logo-desktop.svg"
-                alt="Логотип Smart Device"
-                width="215"
-                height="55"
-              />
-            </a>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link-ok" href="#">
-                  <svg
-                    class="social__icon"
-                    width="30"
-                    height="30"
-                    aria-label="Логотип одноклассники"
-                  >
-                    <use xlink:href="img/sprite.svg#ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link-vk" href="#">
-                  <svg
-                    class="social__icon"
-                    width="30"
-                    height="30"
-                    aria-label="Логотип вконтакте"
-                  >
-                    <use xlink:href="img/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link-pinterest" href="#">
-                  <svg
-                    class="social__icon"
-                    width="30"
-                    height="30"
-                    aria-label="Логотип пинтерест"
-                  >
-                    <use xlink:href="img/sprite.svg#pinterest"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <section class="accordion" data-accordion="parent" data-single data-close-inner>
-            <div class="accordion__element" data-accordion="element" is-active>
-              <h3>Разделы сайта</h3>
-              <button class="accordion__button accordion__button--active" type="button" data-accordion="button">
-                <span class="visually-hidden">Открыть/Закрыть</span>
-              </button>
-              <div class="accordion__content" data-accordion="content">
-                <ul class="accordion__list">
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">О Компании</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">Продукты</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">Производство печатных плат</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">Монтаж печатных плат</a>
-                  </li>
-                </ul>
-                <ul class="accordion__list accordion__list--second">
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">Комплектующие</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">Доставка</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="accordion__element accordion__element--adress" data-accordion="element" is-active>
-              <h3>Наш офис</h3>
-              <button class="accordion__button" type="button" data-accordion="button">
-                <span class="visually-hidden">Открыть/Закрыть</span>
-              </button>
-              <div class="accordion__content" data-accordion="content">
-                <ul class="accordion__list">
-                  <li class="accordion__item">
-                    <p>г. Мытищи, Олимпийский проспект, д.10</p>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">+7 (495) 589-40-50</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">+7 (925) 389-58-29</a>
-                  </li>
-                  <li class="accordion__item">
-                    <a class="accordion__link" href="#">+7 (925) 364-78-13</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer__wrapper container ">
+        <div class="social">
+          <a class="social__logo" href="index.html">
+            <img
+              class="social__image"
+              src="img/svg/logo-desktop.svg"
+              alt="Логотип Smart Device"
+              width="215"
+              height="55"
+            />
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link-ok" href="#">
+                <svg
+                  class="social__icon"
+                  width="30"
+                  height="30"
+                  aria-label="Логотип одноклассники"
+                >
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link-vk" href="#">
+                <svg
+                  class="social__icon"
+                  width="30"
+                  height="30"
+                  aria-label="Логотип вконтакте"
+                >
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link-pinterest" href="#">
+                <svg
+                  class="social__icon"
+                  width="30"
+                  height="30"
+                  aria-label="Логотип пинтерест"
+                >
+                  <use xlink:href="img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </footer>
+        <section class="accordion" data-accordion="parent" data-single data-close-inner>
+          <div class="accordion__element" data-accordion="element" is-active>
+            <h3>Разделы сайта</h3>
+            <button class="accordion__button accordion__button--active" type="button" data-accordion="button">
+              <span class="visually-hidden">Открыть/Закрыть</span>
+            </button>
+            <div class="accordion__content" data-accordion="content">
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">О Компании</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">Продукты</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">Производство печатных плат</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">Монтаж печатных плат</a>
+                </li>
+              </ul>
+              <ul class="accordion__list accordion__list--second">
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">Комплектующие</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">Доставка</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion__element accordion__element--adress" data-accordion="element" is-active>
+            <h3>Наш офис</h3>
+            <button class="accordion__button" type="button" data-accordion="button">
+              <span class="visually-hidden">Открыть/Закрыть</span>
+            </button>
+            <div class="accordion__content" data-accordion="content">
+              <ul class="accordion__list">
+                <li class="accordion__item">
+                  <p>г. Мытищи, Олимпийский проспект, д.10</p>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">+7 (495) 589-40-50</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">+7 (925) 389-58-29</a>
+                </li>
+                <li class="accordion__item">
+                  <a class="accordion__link" href="#">+7 (925) 364-78-13</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
 
       <!-- Модалки -->
-      <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal modal--preload" data-modal="modal">
         <div class="modal__wrapper">
           <div class="modal__overlay" data-close-modal></div>
-          <div class="modal__content">
-            <p class="modal__description">Обычная модалка</p>
+          <div class="modal__content" data-form-validate>
+            <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>
+                Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+              </p>
+              <div class="form__name" >
+                <label for="modal-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <span class="visually-hidden">Имя</span>
+                  <input id="modal-name" type="text" name="name" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="form__tel">
+                <label for="modal-tel" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required data-phone-length="18">
+                  <span class="visually-hidden">Телефон</span>
+                  <input id="modal-tel" type="text" name="tel" placeholder="Телефон" required>
+                </label>
+              </div>
+              <div class="form__question" >
+                <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <div class="form__container">
+                <button class="form__button" type="submit" >Задать вопрос</button>
+              </div>
+              <div class="form__checkbox">
+                <label for="modal-checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="checkbox" id="modal-checkbox" name="agrement" checked required>
+                  <span> Я согласен на обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
             <button
               class="modal__close-btn btn-reset"
               type="button"
               aria-label="Закрыть попап"
               data-close-modal
             >
-              <svg width="15" height="15">
-                <use xlink:href="img/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="modal modal--preload modal--fit-content modal--no-scale"
-        data-modal="success"
-      >
-        <div class="modal__wrapper">
-          <div class="modal__overlay" data-close-modal></div>
-          <div class="modal__content">
-            <p class="modal__description">
-              Размер этой модалки зависит от ширины контента,<br />
-              отключена анимация-скейл
-            </p>
-            <button
-              class="modal__close-btn btn-reset"
-              type="button"
-              aria-label="Закрыть попап"
-              data-close-modal
-            >
-              <svg width="15" height="15">
+            <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </button>

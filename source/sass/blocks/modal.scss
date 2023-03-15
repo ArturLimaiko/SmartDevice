@@ -16,9 +16,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal,
-    transform $trans-modal,
-    visibility $trans-modal;
+  transition: opacity $trans-modal, transform $trans-modal, visibility $trans-modal;
 
   pointer-events: none;
 
@@ -62,7 +60,7 @@
     width: 600px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-deep-sky-blue;
 
     @include vp-767 {
       width: 100%;
@@ -72,6 +70,7 @@
 
   &__close-btn {
     position: absolute;
+    content: "";
     top: 22px;
     right: 22px;
     z-index: 1;
@@ -79,8 +78,8 @@
     width: 40px;
     height: 40px;
     padding: 0;
-
-    background: $color-transparent;
+    fill: $color-default-white;
+    background: $color-transparent center;
     border: none;
     cursor: pointer;
   }
@@ -117,3 +116,42 @@
     pointer-events: auto;
   }
 }
+
+.modal__content {
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 30px;
+  }
+
+  & h2 {
+    display: block;
+    font-family: $ff-roboto-condensed;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    color: $color-default-white;
+    margin: 0;
+    font-size: 30px;
+    line-height: 140.62%;
+    padding-bottom: 10px;
+  }
+
+  & p {
+    display: block;
+    font-family: $ff-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  & input {
+    width: 100%;
+  }
+}
+
