@@ -1,8 +1,8 @@
-const accordionElem = document.querySelector('[data-accordion="element"]');
+const accordionElement = document.querySelector('[data-accordion="element"]');
 const accordionButton = document.querySelector('[data-accordion="button"]');
 
 const accordionButtonToggler = () => {
-  if (!accordionElem.classList.contains('is-active')) {
+  if (!accordionElement.classList.contains('is-active')) {
     accordionButton.textContent = 'свернуть';
   } else {
     accordionButton.textContent = 'подробнее';

@@ -11,6 +11,11 @@
     top: 57px;
     left: 325px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/2022@2x.png");
+      background-size:150px 320px;
+    }
+
     @media (max-width: ($vp-1920 - 1px)) {
       top: 42px;
       left: 50px;
@@ -105,12 +110,8 @@
   }
 }
 
-// .about__more {
-//   display: none;
-// }
-
-// .mobile__hidden {
-//   @media (max-width: ($vp-768 - 1px)) {
-//     display: none;
-//   }
-// }
+.mobile__hidden {
+  @media (max-width: ($vp-768 - 1px)) {
+    display: none;
+  }
+}

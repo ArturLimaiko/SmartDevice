@@ -10,6 +10,12 @@
   height: auto;
   display: flex;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
+      url("../../img/background-image@2x.jpg");
+    background-size: cover;
+  }
+
   @media (max-width: ($vp-1920 - 1px)) {
     padding: 180px 0 205px;
     margin-top: -95px;
