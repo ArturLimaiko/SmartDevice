@@ -1,5 +1,5 @@
 .general {
-  padding: 200px 475px 280px;
+  padding: 200px 0 280px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../../img/background-image.jpg");
   background-repeat: no-repeat;
@@ -11,13 +11,13 @@
   display: flex;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 180px 50px 205px;
+    padding: 180px 0 205px;
     margin-top: -95px;
     background-position: 18%;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 138px 25px 190px;
+    padding: 138px 0 190px;
     background-position: 25%;
   }
 }
@@ -82,6 +82,7 @@
   color: $color-alice-blue-lightest;
   border-radius: 3px;
   display: inline-block;
+  cursor: pointer;
 
   @include hover-focus {
     background-color: $color-deep-sky-blue-light;
@@ -94,7 +95,7 @@
   }
 
   @media (max-width: ($vp-1920 - 1px)) {
-    margin-left: 50px;
+    margin-left: 45px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {

@@ -1,14 +1,13 @@
-.services__container {
+.services {
   background-color: $color-deep-pearl;
-  padding: 50px 350px 170px;
-  margin: 0 auto;
+  padding: 50px 0 170px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 50px;
+    padding: 50px 0;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 50px 25px 86px;
+    padding: 50px 0 86px;
   }
 }
 
@@ -20,7 +19,6 @@
   line-height: 51px;
   color: $color-default-white;
   margin: 0;
-  padding-left: 62px;
 
   @media (max-width: ($vp-1920 - 1px)) {
     padding: 0;
@@ -68,8 +66,13 @@
   display: block;
   height: 100%;
 
+  @media (max-width: ($vp-1920 - 1px)) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   @media (max-width: ($vp-768 - 1px)) {
-    min-height: 250px;
+    max-height: 250px;
   }
 
   @include hover-focus {

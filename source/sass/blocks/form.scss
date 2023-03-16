@@ -142,7 +142,7 @@
 
   &:not(:disabled):hover,
   &:not(:disabled):focus {
-    background-color: $color-deep-pearl-darker;
+    background-color: $color-deep-pearl-darkerer;
     box-shadow: $box-shadow-light;
   }
 
@@ -180,7 +180,7 @@
 
     &:not(:disabled):hover,
     &:not(:disabled):focus {
-      background-color: $color-deep-pearl-darker;
+      background-color: $color-deep-pearl-darkerer;
       box-shadow: $box-shadow-light;
     }
 

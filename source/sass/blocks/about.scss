@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  padding: 60px 350px 100px;
+  padding: 60px 0 100px;
 
   &::before {
     position: absolute;
@@ -22,11 +22,11 @@
   }
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 40px 50px 50px;
+    padding: 40px 0 50px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 25px 25px 80px;
+    padding: 25px 0 80px;
   }
 }
 
@@ -105,12 +105,12 @@
   }
 }
 
-.about__more {
-  display: none;
-}
+// .about__more {
+//   display: none;
+// }
 
-.mobile__hidden {
-  @media (max-width: ($vp-768 - 1px)) {
-    display: none;
-  }
-}
+// .mobile__hidden {
+//   @media (max-width: ($vp-768 - 1px)) {
+//     display: none;
+//   }
+// }

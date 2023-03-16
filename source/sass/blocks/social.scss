@@ -1,5 +1,12 @@
 .social {
   @media (max-width: ($vp-1920 - 1px)) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 36px;
+    max-width: 1440px;
+  }
+
+  @media (max-width: ($vp-1024 - 1px)) {
     grid-column: 1/3;
     display: flex;
     justify-content: space-between;
@@ -23,7 +30,7 @@
   padding-top: 30px;
   flex-wrap: wrap;
 
-  @media (max-width: ($vp-1920 - 1px)) {
+  @media (max-width: ($vp-1024 - 1px)) {
     padding: 0;
     align-items: center;
   }
@@ -35,6 +42,14 @@
 
 .social__icon {
   fill: $color-alice-blue-light;
+
+  @include hover-focus {
+    fill: $color-deep-sky-blue;
+  }
+
+  @include active {
+    fill: $color-deep-sky-blue-dark;
+  }
 }
 
 .social__item {
@@ -42,5 +57,15 @@
 
   @media (max-width: ($vp-768 - 1px)) {
     margin-left: 25px;
+  }
+}
+
+.social__logo {
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
+  @include active {
+    opacity: 0.6;
   }
 }

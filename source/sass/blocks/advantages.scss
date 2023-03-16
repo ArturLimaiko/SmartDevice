@@ -1,12 +1,12 @@
 .advantages {
-  padding: 120px 348px 60px;
+  padding: 120px 0 60px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 80px 50px 40px;
+    padding: 80px 0 40px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding:25px;
+    padding: 25px 0;
   }
 }
 
@@ -32,7 +32,7 @@
 
 .advantages__item {
   width: 100%;
-  min-height: 300px;
+  min-height: 360px;
   border: 1px solid $color-whisper;
   border-left: 5px solid $color-deep-sky-blue;
   padding: 40px 45px 35px;
@@ -52,7 +52,7 @@
   }
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 40px 30px 35px 35px;
+    padding: 40px 29px 35px 46px;
     height: 100%;
   }
 
