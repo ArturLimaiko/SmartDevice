@@ -1,11 +1,5 @@
 .footer {
   background-color: $color-deep-pearl;
-  padding: 55px 310px 30px;
-  padding: 0;
-
-  @media (max-width: ($vp-1024 - 1px)) {
-    padding: 0;
-  }
 }
 
 .footer__wrapper {
@@ -17,10 +11,8 @@
   gap: 60px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 50px;
     grid-template-columns: 1fr;
     gap: 0;
-    padding: 50px 100px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {

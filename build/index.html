@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Smart Device" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Smart Device" >
     <title>Smart Device</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" >
     <link
       rel="preload"
       href="./fonts/RobotoCondensed-regular.woff2"
       type="font/woff2"
       as="font"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="preload"
       href="./fonts/RobotoCondensed-bold.woff2"
       type="font/woff2"
       as="font"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="preload"
       href="./fonts/PTMono-regular.woff2"
       type="font/woff2"
       as="font"
       crossorigin="anonymous"
-    />
+    >
   </head>
   <body>
     <div class="wrapper">
@@ -41,14 +41,14 @@
                   width="35"
                   height="35"
                   srcset="img/svg/logo-mobile.svg"
-                />
+                >
                 <img
                   class="header__logo-image"
                   src="img/svg/logo-desktop.svg"
                   alt=""
                   width="215"
                   height="55"
-                />
+                >
               </picture>
             </a>
             <ul class="header__list">
@@ -79,7 +79,7 @@
                 </a>
               </li>
             </ul>
-            <button class="header__button" type="button" href="#" data-open-modal="modal">
+            <button class="header__button" type="button" data-open-modal="modal">
               Заказать звонок
             </button>
           </nav>
@@ -93,7 +93,7 @@
       <div class="container">
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="genaral__button" >
+          <a class="general__button" >
             <span class="general__text">Получить бесплатную консультацию</span>
             <span class="general__short">Бесплатная консультация</span>
           </a>
@@ -144,6 +144,10 @@
     <section class="about" >
       <div class="container">
         <div class="about__box" data-accordion="parent">
+          <div class="about__image">
+            <source type ="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x" >
+            <img src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320" alt="2022 о компании">
+          </div>
           <div class="about__content" data-accordion="element">
             <h3>О компании</h3>
             <p>
@@ -151,7 +155,7 @@
               Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
             <p>
-              Наши поставщики - мировые производители электронных компонентов:OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="mobile__hidden">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+              Наши поставщики - мировые производители электронных компонентов:OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__hidden">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
               Среди наших клиентов крупнейшие Производители светотехники России.</span>
             </p>
             <div class="about__more" data-accordion="content">
@@ -236,11 +240,11 @@
     </section>
 
     <!-- Форма -->
-    <div class="main__wrapper">
+    <div class="main-wrapper">
       <section class="form container">
         <div class="form__background">
           <picture>
-            <source type ="image/webp" srcset="./img/paper-airplane.webp, ./img/paper-airplane@2x.webp 2x">
+            <source type ="image/webp" srcset="./img/paper-airplane.webp 1x, ./img/paper-airplane@2x.webp 2x">
             <img src="./img/paper-airplane.png" srcset="./img/paper-airplane@2x.png 2x" width="510" height="285" alt="Бумажный самолетик">
           </picture>
         </div>
@@ -292,7 +296,7 @@
                 alt="Логотип Smart Device"
                 width="215"
                 height="55"
-              />
+              >
             </a>
             <ul class="social__list">
               <li class="social__item">
@@ -399,7 +403,7 @@
           <div class="modal__overlay" data-close-modal></div>
           <div class="modal__content" data-form-validate>
             <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
-              <h2>Остались вопросы? Задайте их нам!</h2>
+              <h2>Закажите звонок</h2>
               <p>
                 Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
               </p>
@@ -412,7 +416,7 @@
               <div class="form__tel">
                 <label for="modal-tel" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required data-phone-length="18">
                   <span class="visually-hidden">Телефон</span>
-                  <input id="modal-tel" type="text" name="tel" placeholder="Телефон" required>
+                  <input id="modal-tel" type="text" name="tel" placeholder="Телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                 </label>
               </div>
               <div class="form__question" >
