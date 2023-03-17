@@ -2179,14 +2179,6 @@ button,
   transition: none;
 }
 
-[data-accordion=content] {
-  max-height: 0;
-  -webkit-transition: max-height 0.3s;
-  -o-transition: max-height 0.3s;
-  transition: max-height 0.3s;
-  overflow: hidden;
-}
-
 .accordion {
   display: -ms-grid;
   display: grid;
@@ -2771,6 +2763,14 @@ button,
 
   .social__item {
     margin-left: 25px;
+  }
+
+  [data-accordion=content] {
+    max-height: 0;
+    -webkit-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+    overflow: hidden;
   }
 
   .accordion {
