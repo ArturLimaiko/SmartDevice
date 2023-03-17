@@ -60,11 +60,21 @@
 
 .services__item {
   position: relative;
+  min-height: 650px;
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    min-height: 250px;
+  }
+
+  @media (max-width: ($vp-1920 - 1px)) {
+    min-height: 250px;
+  }
 }
 
 .services__link {
   display: block;
   height: 100%;
+  width: 100%;
 
   @media (max-width: ($vp-1920 - 1px)) {
     grid-template-columns: 1fr;
@@ -72,7 +82,7 @@
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    max-height: 250px;
+    min-height: 250px;
   }
 
   @include hover-focus {
@@ -85,8 +95,8 @@
   }
 
   & p {
-    position: absolute;
-    width: 173px;
+    position: relative;
+    max-width: 230px;
     margin: 0;
     color: $color-default-white;
     font-family: $ff-roboto-condensed;
@@ -94,24 +104,20 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    top: 40px;
-    left: 35px;
+    padding: 45px;
 
     @media (max-width: ($vp-768 - 1px)) {
       font-size: 18px;
       line-height: 167%;
-      top: 26px;
-      left: 30px;
+      padding: 30px;
     }
   }
 
   & img {
+    position: absolute;
     object-fit: cover;
     width: 100%;
-
-    @media (max-width: ($vp-768 - 1px)) {
-      height: 250px;
-    }
+    height: 100%;
   }
 }
 

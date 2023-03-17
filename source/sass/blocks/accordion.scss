@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    gap: 20px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -33,9 +34,13 @@
 
   &__content {
     display: grid;
+    overflow: visible;
+    min-height: 180px;
 
-    @media (max-width: ($vp-1920 - 1px)) {
+    @media (max-width: ($vp-768 - 1px)) {
       display: block;
+      min-height: 0;
+      overflow: hidden;
     }
   }
 
