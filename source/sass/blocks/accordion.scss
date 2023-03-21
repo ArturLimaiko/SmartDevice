@@ -8,6 +8,8 @@
     grid-template-columns: 1fr 1fr;
     width: 100%;
     gap: 20px;
+    margin: 0;
+    padding-bottom: 55px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -42,6 +44,9 @@
 
     @media (max-width: ($vp-1920 - 1px)) {
       min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 233px;
     }
 
     @media (max-width: ($vp-768 - 1px)) {
@@ -70,7 +75,7 @@
 
   &__element.is-active {
     @media (max-width: ($vp-768 - 1px)) {
-      padding: 10px 0;
+      padding: 11px 0;
       border-bottom: 1px solid $color-white-transparent;
     }
   }
@@ -102,8 +107,8 @@
 
     @media (max-width: ($vp-768 - 1px)) {
       position: absolute;
-      left: 20px;
-      padding-top: 15px;
+      left: 24px;
+      padding-top: 25px;
     }
   }
 
@@ -135,7 +140,8 @@
         content: "";
         width: 15px;
         height: 1px;
-        right: 21px;
+        right: 26px;
+        bottom: 21px;
         background-color: $color-default-white;
       }
 
@@ -165,6 +171,11 @@
 
     &--contacts {
       min-width: 330px;
+      padding-left: 10px;
+
+      @media (max-width: ($vp-768 - 1px)) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -172,9 +183,15 @@
     color: $color-white-transparent;
     padding-bottom: 6px;
     margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
 
     @media (max-width: ($vp-768 - 1px)) {
       line-height: 135%;
+      padding-bottom: 22px;
+      max-width: 279px;
     }
   }
 

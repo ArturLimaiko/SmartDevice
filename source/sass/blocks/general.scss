@@ -23,7 +23,7 @@
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 138px 0 190px;
+    padding: 164px 0 190px;
     background-position: 25%;
   }
 }
@@ -71,6 +71,8 @@
   @media (max-width: ($vp-768 - 1px)) {
     font-size: 14px;
     min-width: 271px;
+    padding-top: 7px;
+    padding-bottom: 45px;
   }
 }
 

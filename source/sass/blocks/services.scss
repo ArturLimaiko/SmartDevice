@@ -1,13 +1,13 @@
 .services {
   background-color: $color-deep-pearl;
-  padding: 45px 0 141px;
+  padding: 64px 0 141px;
 
   @media (max-width: ($vp-1920 - 1px)) {
     padding: 55px 0 75px 0;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 50px 0 86px;
+    padding: 48px 0 86px;
   }
 
   & h2 {
@@ -53,13 +53,17 @@
   margin: 0 auto;
   gap: 85px;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 31px;
   max-width: 1220px;
 
   @media (max-width: ($vp-1920 - 1px)) {
     grid-template-columns: 1fr;
     gap: 30px;
     padding-top: 14px;
+  }
+
+  @media (max-width: ($vp-768 - 1px)) {
+    padding-top: 28px;
   }
 }
 
@@ -120,7 +124,8 @@
     @media (max-width: ($vp-768 - 1px)) {
       font-size: 18px;
       line-height: 167%;
-      padding: 30px;
+      padding: 26px 30px;
+      max-width: 194px;
     }
   }
 

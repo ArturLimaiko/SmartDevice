@@ -6,7 +6,7 @@
   }
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 25px 0;
+    padding: 50px 0;
   }
 }
 
@@ -69,6 +69,44 @@
 
   @media (max-width: ($vp-768 - 1px)) {
     padding-left: 25px;
+    min-height: 340px;
+
+    &--stopwatch {
+      padding: 28px 34px 34px 24px;
+
+      & h3 {
+        padding-top: 5px;
+        padding-bottom: 9px;
+      }
+    }
+
+    &--hired {
+      padding-top: 25px;
+
+      & h3 {
+        padding-top: 7px;
+        padding-bottom: 10px;
+      }
+    }
+
+    &--detective {
+      min-height: 323px;
+      padding-top: 26px;
+
+      & h3 {
+        padding-bottom: 14px;
+      }
+    }
+
+    &--price {
+      min-height: 323px;
+      padding: 26px 34px 35px 25px;
+
+      & h3  {
+        padding-top: 8px;
+        padding-bottom: 14px;
+      }
+    }
   }
 }
 
