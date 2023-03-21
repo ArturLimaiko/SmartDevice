@@ -105,35 +105,36 @@
     <section class="advantages">
       <div class="container">
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--stopwatch">
             <svg class="advantages__icon" width="35" height="35" aria-label="Иконка часов">
               <use xlink:href="img/sprite.svg#stopwatch"></use>
             </svg>
             <h3>Оперативные сроки </h3>
             <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--hired">
             <svg class="advantages__icon" width="35" height="35" aria-label="Иконка поставщиков">
               <use xlink:href="img/sprite.svg#hired"></use>
             </svg>
             <h3>Крупные поставщики</h3>
-            <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+            <p>Нашими поставщиками являются такие крупные мировые компании как:  OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--detective">
             <svg class="advantages__icon" width="35" height="35" aria-label="Иконка детектива">
               <use xlink:href="img/sprite.svg#detective"></use>
             </svg>
             <h3>Полная конфиденциальность</h3>
-            <p>По желанию клиента  мы обеспечиваем полную конфиденциальность.
+            <p>По желанию клиента мы обеспечиваем полную конфиденциальность.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--price">
             <svg class="advantages__icon" width="35" height="35" aria-label="Иконка стоимости">
               <use xlink:href="img/sprite.svg#price"></use>
             </svg>
             <h3>Персонализация стоимости</h3>
-            <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+            <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
             </p>
           </li>
         </ul>
@@ -155,7 +156,7 @@
               Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
             <p>
-              Наши поставщики - мировые производители электронных компонентов:OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__hidden">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+              Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__hidden">Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
               Среди наших клиентов крупнейшие Производители светотехники России.</span>
             </p>
             <div class="about__more" data-accordion="content">
@@ -240,6 +241,8 @@
       </div>
     </section>
 
+
+
     <!-- Форма -->
     <div class="main-wrapper">
       <section class="form container">
@@ -250,9 +253,9 @@
           </picture>
         </div>
         <div class="form__wrapper-validate" data-form-validate>
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
           <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
-            <h2>Остались вопросы? Задайте их нам!</h2>
-            <p>Мы проконсультируем Вас бесплатно</p>
             <div class="form__name" >
               <label for="name"  data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <span class="visually-hidden">Имя</span>
@@ -266,8 +269,7 @@
               </label>
             </div>
             <div class="form__question" >
-              <textarea name="question" placeholder="Ваш вопрос">
-              </textarea>
+              <textarea placeholder="Ваш вопрос"></textarea>
               <span class="visually-hidden">Поле для вопросов</span>
             </div>
             <div class="form__container">
@@ -312,7 +314,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
+              <li class="social__item social__item--vk">
                 <a class="social__link-vk" href="#">
                   <svg
                     class="social__icon"
@@ -324,7 +326,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
+              <li class="social__item social__item--pinterest">
                 <a class="social__link-pinterest" href="#">
                   <svg
                     class="social__icon"
@@ -378,7 +380,7 @@
                 <span class="visually-hidden">Открыть/Закрыть</span>
               </button>
               <div class="accordion__content" data-accordion="content">
-                <ul class="accordion__list">
+                <ul class="accordion__list accordion__list--contacts">
                   <li class="accordion__item">
                     <p>г. Мытищи, Олимпийский проспект, д.10</p>
                   </li>
@@ -403,11 +405,12 @@
         <div class="modal__wrapper">
           <div class="modal__overlay" data-close-modal></div>
           <div class="modal__content" data-form-validate>
-            <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
-              <h2>Закажите звонок</h2>
-              <p>
-                Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
-              </p>
+            <h2>Закажите звонок</h2>
+            <p>
+              Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
+            </p>
+            <form class="form form-modal" action="https://echo.htmlacademy.ru/" method="post">
+
               <div class="form__name" >
                 <label for="modal-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                   <span class="visually-hidden">Имя</span>
@@ -424,7 +427,7 @@
                 <textarea name="question" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="form__container">
-                <button class="form__button" type="submit" >Задать вопрос</button>
+                <button class="form__button" type="submit" >Отправить</button>
               </div>
               <div class="form__checkbox">
                 <label for="modal-checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>

@@ -639,8 +639,8 @@ button,
 
 .modal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -144px;
+  right: 16px;
   bottom: 0;
   left: 0;
   z-index: 1000;
@@ -702,7 +702,7 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 40px;
   background-color: #00b2ff;
 }
@@ -749,8 +749,8 @@ button,
 .modal__close-btn {
   position: absolute;
   content: "";
-  top: 22px;
-  right: 22px;
+  top: 18px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1314,6 +1314,10 @@ button,
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
 
+.header__logo {
+  padding-top: 11px;
+}
+
 .header__logo:hover {
   opacity: 0.7;
 }
@@ -1347,17 +1351,13 @@ button,
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-right: 15px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 80px;
 }
 
 .header__item--email {
-  padding-right: 60px;
-}
-
-.header__item--tel {
-  padding-left: 60px;
+  padding-right: 22px;
 }
 
 .header__item a {
@@ -1416,6 +1416,7 @@ button,
   padding: 10px 15px;
   background-color: transparent;
   cursor: pointer;
+  margin-right: 62px;
 }
 
 .header__button:hover {
@@ -1443,7 +1444,7 @@ button,
 }
 
 .general {
-  padding: 200px 0 280px;
+  padding: 308px 365px 280px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-image.jpg");
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image.jpg");
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image.jpg");
@@ -1467,7 +1468,7 @@ button,
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #f2f5f6;
-  padding: 0 0 40px 0;
+  padding: 0 0 29px 0;
   margin: 0;
 }
 
@@ -1479,13 +1480,13 @@ button,
   line-height: 155%;
   color: #f2f5f6;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 46px;
   max-width: 685px;
 }
 
 .general__button {
   background-color: #00b2ff;
-  padding: 15px 27px;
+  padding: 17px 27px;
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1542,10 +1543,10 @@ button,
 
 .advantages__item {
   width: 100%;
-  min-height: 360px;
+  min-height: 300px;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
-  padding: 40px 45px 35px;
+  padding: 40px 40px 35px;
 }
 
 .advantages__item:hover {
@@ -1589,17 +1590,17 @@ button,
   line-height: 140%;
   margin: 0;
   padding-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 13px;
 }
 
 .about {
   position: relative;
-  padding: 60px 0 100px;
+  padding: 59px 0 100px;
 }
 
 .about__image img {
-  width: 150px;
-  height: 320px;
+  width: 146px;
+  height: 324px;
 }
 
 .about__box {
@@ -1607,6 +1608,7 @@ button,
   display: grid;
   -ms-grid-columns: 200px 1fr;
   grid-template-columns: 200px 1fr;
+  gap: 50px;
 }
 
 .about h3 {
@@ -1617,7 +1619,7 @@ button,
   font-size: 36px;
   line-height: 51px;
   color: #041827;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .about p {
@@ -1647,6 +1649,7 @@ button,
   letter-spacing: 0.05em;
   text-transform: uppercase;
   cursor: pointer;
+  margin-top: 18px;
 }
 
 .about__button:hover {
@@ -1669,7 +1672,11 @@ button,
 
 .services {
   background-color: #041827;
-  padding: 50px 0 170px;
+  padding: 45px 0 141px;
+}
+
+.services h2 {
+  margin: 0;
 }
 
 .services__desktop {
@@ -1691,7 +1698,7 @@ button,
   margin: 0 auto;
   gap: 85px;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 10px;
   max-width: 1220px;
 }
 
@@ -1724,7 +1731,7 @@ button,
 
 .services__link p {
   position: relative;
-  max-width: 230px;
+  max-width: 237px;
   margin: 0;
   color: #ffffff;
   font-family: "Roboto Condensed", "Helvetica", sans-serif;
@@ -1732,7 +1739,8 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  padding: 45px;
+  padding: 46px;
+  padding-left: 40px;
 }
 
 .services__link img {
@@ -1773,10 +1781,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   padding-top: 160px;
-  padding-bottom: 250px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  padding-bottom: 247px;
+  gap: 67px;
 }
 
 .form form {
@@ -1785,7 +1791,7 @@ button,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   max-width: 585px;
-  gap: 15px 30px;
+  gap: 15px 36px;
 }
 
 .form h2 {
@@ -1797,7 +1803,6 @@ button,
   line-height: 51px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 15px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -1812,15 +1817,15 @@ button,
   line-height: 22px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 21px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
 .form__background {
-  margin-right: 115px;
-  margin-top: 100px;
+  margin-right: 49px;
+  margin-top: 85px;
 }
 
 .form__button {
@@ -1934,12 +1939,14 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
+  padding-bottom: 20px;
 }
 
 .form__question textarea {
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
+  color: #ffffff;
   padding: 25px 0 15px 15px;
   width: 100%;
   min-height: 155px;
@@ -2013,8 +2020,8 @@ button,
   line-height: 16px;
   color: #ffffff;
   cursor: pointer;
-  margin-left: 45px;
-  margin-top: 15px;
+  margin-left: 36px;
+  margin-top: 16px;
 }
 
 .form__checkbox input {
@@ -2042,7 +2049,8 @@ button,
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
-  left: -31px;
+  left: -26px;
+  top: 5px;
 }
 
 .form__checkbox input[type=checkbox]:checked + span::after {
@@ -2052,8 +2060,8 @@ button,
   height: 7px;
   background-image: url(../../img/svg/checkmark.svg);
   background-repeat: no-repeat;
-  left: -28px;
-  top: 4px;
+  left: -24px;
+  top: 10px;
 }
 
 .form__checkbox input:hover + span::before,
@@ -2064,6 +2072,11 @@ button,
 .form__checkbox input:hover + span,
 .form__checkbox input:focus + span {
   color: #2b2c2c;
+}
+
+.form-modal {
+  max-height: 610px;
+  padding: 0;
 }
 
 .main-wrapper {
@@ -2132,7 +2145,7 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-top: 30px;
+  padding-top: 34px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -2154,7 +2167,15 @@ button,
 }
 
 .social__item {
-  margin-left: 20px;
+  margin-left: 15px;
+}
+
+.social__item--vk {
+  margin-left: 25px;
+}
+
+.social__item--pinterest {
+  margin-left: 25px;
 }
 
 .social__logo:hover {
@@ -2182,6 +2203,8 @@ button,
 .accordion {
   display: -ms-grid;
   display: grid;
+  margin-top: 7px;
+  margin-left: 14px;
 }
 
 .accordion__link:hover {
@@ -2201,13 +2224,14 @@ button,
   display: grid;
   overflow: visible;
   min-height: 180px;
+  min-width: 406px;
 }
 
 .accordion__element--adress {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  margin-left: 120px;
+  margin-left: 95px;
 }
 
 .accordion__element h3 {
@@ -2231,17 +2255,21 @@ button,
   padding: 0;
   list-style-type: none;
   margin: 0;
+  max-width: 220px;
 }
 
 .accordion__list--second {
   -ms-grid-column: 2;
   grid-column: 2/2;
-  margin-left: 40px;
+}
+
+.accordion__list--contacts {
+  min-width: 330px;
 }
 
 .accordion__item p {
   color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   margin: 0;
 }
 
@@ -2252,7 +2280,7 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 156%;
-  padding-bottom: 10px;
+  padding-bottom: 4.5px;
   display: block;
 }
 
@@ -2302,6 +2330,14 @@ button,
     position: relative;
   }
 
+  .header__nav {
+    padding-top: 9px;
+  }
+
+  .header__list {
+    gap: 0;
+  }
+
   .header__item {
     padding-right: 20px;
   }
@@ -2323,7 +2359,7 @@ button,
   }
 
   .general {
-    padding: 180px 0 205px;
+    padding: 162px 0 205px;
     margin-top: -95px;
     background-position: 18%;
   }
@@ -2332,11 +2368,11 @@ button,
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
-    padding: 0 0 20px 0;
+    padding: 12px 0 1px;
   }
 
   .general p {
-    padding-bottom: 50px;
+    padding-bottom: 57px;
     min-width: 670px;
   }
 
@@ -2353,8 +2389,19 @@ button,
   }
 
   .advantages__item {
-    padding: 40px 29px 35px 46px;
-    height: 100%;
+    min-height: 360px;
+  }
+
+  .advantages__item--stopwatch {
+    padding: 40px 40px 26px;
+  }
+
+  .advantages__item--hired {
+    padding: 39px 38px 26px;
+  }
+
+  .advantages__item--detective {
+    padding: 38px 40px 26px;
   }
 
   .advantages__item p {
@@ -2362,20 +2409,35 @@ button,
   }
 
   .advantages__item h3 {
-    padding-top: 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .advantages__item--price h3 {
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 
   .about {
-    padding: 40px 0 50px;
+    padding: 35px 0 78px;
   }
 
   .about__box {
     -ms-grid-columns: 175px 1fr;
     grid-template-columns: 175px 1fr;
+    gap: 0;
+  }
+
+  .about p {
+    padding-bottom: 18px;
+  }
+
+  .about__button {
+    margin-top: 0;
   }
 
   .services {
-    padding: 50px 0;
+    padding: 55px 0 75px 0;
   }
 
   .services__desktop {
@@ -2386,6 +2448,7 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 30px;
+    padding-top: 14px;
   }
 
   .services__item {
@@ -2402,6 +2465,11 @@ button,
     gap: 30px;
   }
 
+  .services__link p {
+    padding: 38px 46px 46px 45px;
+    max-width: 240px;
+  }
+
   .form {
     padding-top: 50px;
     padding-bottom: 125px;
@@ -2409,14 +2477,15 @@ button,
 
   .form form {
     max-width: 670px;
+    gap: 20px 30px;
   }
 
   .form h2 {
-    padding-bottom: 10px;
+    padding-bottom: 7px;
   }
 
   .form p {
-    padding-bottom: 10px;
+    padding-bottom: 27px;
   }
 
   .form__background {
@@ -2433,8 +2502,19 @@ button,
     min-width: 320px;
   }
 
+  .form__question {
+    padding-bottom: 8px;
+  }
+
+  .form__checkbox label {
+    margin-left: 26px;
+    margin-top: 10px;
+  }
+
   .main-wrapper {
     background-image: none;
+    padding-top: 45px;
+    padding-bottom: 125px;
   }
 
   .footer__wrapper {
@@ -2488,11 +2568,11 @@ button,
     gap: 20px;
   }
 
-  .accordion__element--adress {
-    margin-left: 0;
+  .accordion__content {
+    min-width: 100%;
   }
 
-  .accordion__list {
+  .accordion__element--adress {
     margin-left: 0;
   }
 }
@@ -2500,14 +2580,6 @@ button,
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px 0 50px;
-  }
-
-  .form {
-    padding-top: 50px;
-    padding-bottom: 125px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .social {
@@ -2521,7 +2593,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 36px;
   }
 

@@ -1,5 +1,5 @@
 .general {
-  padding: 200px 0 280px;
+  padding: 308px 365px 280px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
     url("../../img/background-image.jpg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 180px 0 205px;
+    padding: 162px 0 205px;
     margin-top: -95px;
     background-position: 18%;
   }
@@ -36,14 +36,14 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $color-alice-blue;
-  padding: 0 0 40px 0;
+  padding: 0 0 29px 0;
   margin: 0;
 
   @media (max-width: ($vp-1920 - 1px)) {
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
-    padding: 0 0 20px 0;
+    padding: 12px 0 1px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -60,11 +60,11 @@
   line-height: 155%;
   color: $color-alice-blue;
   margin: 0;
-  padding-bottom: 40px;
+  padding-bottom: 46px;
   max-width: 685px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding-bottom: 50px;
+    padding-bottom: 57px;
     min-width: 670px;
   }
 
@@ -76,7 +76,7 @@
 
 .general__button {
   background-color: $color-deep-sky-blue;
-  padding: 15px 27px;
+  padding: 17px 27px;
   font-family: $ff-roboto-condensed;
   font-style: normal;
   font-weight: 700;

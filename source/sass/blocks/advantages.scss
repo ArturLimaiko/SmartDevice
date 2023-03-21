@@ -32,10 +32,10 @@
 
 .advantages__item {
   width: 100%;
-  min-height: 360px;
+  min-height: 300px;
   border: 1px solid $color-whisper;
   border-left: 5px solid $color-deep-sky-blue;
-  padding: 40px 45px 35px;
+  padding: 40px 40px 35px;
 
   @include hover-focus {
     background-color: $color-deep-sky-blue;
@@ -52,8 +52,19 @@
   }
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding: 40px 29px 35px 46px;
-    height: 100%;
+    min-height: 360px;
+
+    &--stopwatch {
+      padding: 40px 40px 26px;
+    }
+
+    &--hired {
+      padding: 39px 38px 26px;
+    }
+
+    &--detective {
+      padding: 38px 40px 26px;
+    }
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -92,13 +103,21 @@
   line-height: 140%;
   margin: 0;
   padding-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 13px;
 
   @media (max-width: ($vp-1920 - 1px)) {
-    padding-top: 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
   }
 
   @media (max-width: ($vp-768 - 1px)) {
     font-size: 20px;
+  }
+}
+
+.advantages__item--price h3 {
+  @media (max-width: ($vp-1920 - 1px)) {
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }
