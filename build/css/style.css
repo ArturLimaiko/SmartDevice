@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-regular.woff2") format("woff2"), url("../../fonts/RobotoCondensed-regular.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-regular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-bold.woff2") format("woff2"), url("../../fonts/RobotoCondensed-bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-bold.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../../fonts/PTMono-regular.woff2") format("woff2"), url("../../fonts/PTMono-regular.woff") format("woff");
+  src: url("../fonts/PTMono-regular.woff2") format("woff2"), url("../fonts/PTMono-regular.woff") format("woff");
 }
 
 *,
@@ -1445,9 +1445,9 @@ button,
 
 .general {
   padding: 308px 365px 280px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-image.jpg");
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image.jpg");
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image.jpg");
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image.jpg");
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 58%;
@@ -1714,18 +1714,18 @@ button,
 }
 
 .services__link:hover {
-  -webkit-box-shadow: 0px 0px 23px 10px rgba(0, 178, 255, 0.5);
-  box-shadow: 0px 0px 23px 10px rgba(0, 178, 255, 0.5);
+  -webkit-box-shadow: 0 0 23px 10px rgba(0, 178, 255, 0.5);
+  box-shadow: 0 0 23px 10px rgba(0, 178, 255, 0.5);
 }
 
 .services__link.focus-visible:focus {
-  -webkit-box-shadow: 0px 0px 23px 10px rgba(0, 178, 255, 0.5);
-  box-shadow: 0px 0px 23px 10px rgba(0, 178, 255, 0.5);
+  -webkit-box-shadow: 0 0 23px 10px rgba(0, 178, 255, 0.5);
+  box-shadow: 0 0 23px 10px rgba(0, 178, 255, 0.5);
 }
 
 .services__link:active {
-  -webkit-box-shadow: 0px 0px 23px 10px #006eff;
-  box-shadow: 0px 0px 23px 10px #006eff;
+  -webkit-box-shadow: 0 0 23px 10px #006eff;
+  box-shadow: 0 0 23px 10px #006eff;
   opacity: 0.7;
 }
 
@@ -1850,21 +1850,21 @@ button,
 }
 
 .form__button:hover {
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
-  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  -webkit-box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
   color: rgba(255, 255, 255, 0.7);
 }
 
 .form__button.focus-visible:focus {
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
-  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  -webkit-box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
   color: rgba(255, 255, 255, 0.7);
 }
 
 .form__button:active {
   background-color: rgba(22, 22, 22, 0.8);
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
-  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  -webkit-box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
 }
 
 .form__name input,
@@ -1883,8 +1883,8 @@ button,
 .form__tel input:not(:disabled):hover,
 .form__tel input:not(:disabled):focus {
   background-color: rgba(4, 20, 39, 0.5);
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
-  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  -webkit-box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
 }
 
 .form__name input:active::-webkit-input-placeholder,
@@ -1958,8 +1958,8 @@ button,
 .form__question textarea:not(:disabled):hover,
 .form__question textarea:not(:disabled):focus {
   background-color: rgba(4, 20, 39, 0.5);
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
-  box-shadow: 0px 0px 10px 10px rgba(136, 139, 141, 0.5);
+  -webkit-box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
+  box-shadow: 0 0 10px 10px rgba(136, 139, 141, 0.5);
 }
 
 .form__question textarea:active::-webkit-input-placeholder {
@@ -2060,7 +2060,7 @@ button,
   content: "";
   width: 7px;
   height: 7px;
-  background-image: url(../../img/svg/checkmark.svg);
+  background-image: url("../img/svg/checkmark.svg");
   background-repeat: no-repeat;
   left: -24px;
   top: 10px;
@@ -2776,7 +2776,7 @@ button,
   }
 
   .about {
-    padding: 0px 0 80px;
+    padding: 0 0 80px;
   }
 
   .about__image img {
@@ -2908,7 +2908,7 @@ button,
   }
 
   .main-wrapper {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -3135,9 +3135,9 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .general {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background-image@2x.jpg");
-    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image@2x.jpg");
-    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background-image@2x.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-image@2x.jpg");
+    background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
+    background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-image@2x.jpg");
     background-size: cover;
   }
 }

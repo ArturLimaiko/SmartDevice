@@ -95,11 +95,11 @@
   }
 
   @include hover-focus {
-    box-shadow: 0px 0px 23px 10px $color-deep-sky-blue-lightest;
+    box-shadow: 0 0 23px 10px $color-deep-sky-blue-lightest;
   }
 
   @include active {
-    box-shadow: 0px 0px 23px 10px $color-deep-sky-blue-dark;
+    box-shadow: 0 0 23px 10px $color-deep-sky-blue-dark;
     opacity: 0.7;
   }
 

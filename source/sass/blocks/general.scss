@@ -1,7 +1,7 @@
 .general {
   padding: 308px 365px 280px;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
-    url("../../img/background-image.jpg");
+    url("../img/background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 58%;
@@ -12,7 +12,7 @@
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%),
-      url("../../img/background-image@2x.jpg");
+      url("../img/background-image@2x.jpg");
     background-size: cover;
   }
 
@@ -27,6 +27,7 @@
     background-position: 25%;
   }
 }
+
 .general h2 {
   font-family: $ff-roboto-condensed;
   font-style: normal;

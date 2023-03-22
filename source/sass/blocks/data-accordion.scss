@@ -7,9 +7,9 @@
 }
 
 [data-accordion="content"] {
-    max-height: 0;
-    transition: max-height 0.3s;
-    overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s;
+  overflow: hidden;
 
   @media (max-width: ($vp-1920 - 1px)) {
     max-height: 0;

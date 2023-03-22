@@ -45,7 +45,7 @@
                 <img
                   class="header__logo-image"
                   src="img/svg/logo-desktop.svg"
-                  alt=""
+                  alt="Логотип Smart Device"
                   width="215"
                   height="55"
                 >
@@ -94,8 +94,12 @@
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a class="general__button" >
-            <span class="general__text">Получить бесплатную консультацию</span>
-            <span class="general__short">Бесплатная консультация</span>
+            <div class="general__text">
+              <span >Получить бесплатную консультацию</span>
+            </div>
+            <div class="general__short">
+              <span>Бесплатная консультация</span>
+            </div>
           </a>
       </div>
 
@@ -146,8 +150,10 @@
       <div class="container">
         <div class="about__box" data-accordion="parent">
           <div class="about__image">
-            <source type ="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x" >
-            <img src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320" alt="2022 о компании">
+            <picture>
+              <source type ="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x" >
+              <img src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320" alt="2022 о компании">
+            </picture>
           </div>
           <div class="about__content" data-accordion="element">
             <h3>О компании</h3>
@@ -268,8 +274,10 @@
               </label>
             </div>
             <div class="form__question" >
-              <textarea placeholder="Ваш вопрос"></textarea>
-              <span class="visually-hidden">Поле для вопросов</span>
+              <label for="textarea">
+                <textarea placeholder="Ваш вопрос" id="textarea"></textarea>
+                <span class="visually-hidden">Поле для вопросов</span>
+              </label>
             </div>
             <div class="form__container">
               <button class="form__button" type="submit" >Задать вопрос</button>
@@ -340,7 +348,7 @@
             </ul>
           </div>
           <section class="accordion" data-accordion="parent" data-single data-close-inner>
-            <div class="accordion__element accordion__element--about" data-accordion="element" is-active>
+            <div class="accordion__element accordion__element--about" data-accordion="element">
               <h3>Разделы сайта</h3>
               <button class="accordion__button accordion__button--active" type="button" data-accordion="button">
                 <span class="visually-hidden">Открыть/Закрыть</span>
@@ -373,7 +381,7 @@
                 </ul>
               </div>
             </div>
-            <div class="accordion__element accordion__element--adress" data-accordion="element" is-active>
+            <div class="accordion__element accordion__element--adress" data-accordion="element">
               <h3>Наш офис</h3>
               <button class="accordion__button" type="button" data-accordion="button">
                 <span class="visually-hidden">Открыть/Закрыть</span>
