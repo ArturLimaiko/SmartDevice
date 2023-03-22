@@ -2275,16 +2275,15 @@ button,
 
 .accordion__list--contacts {
   min-width: 330px;
-  padding-left: 10px;
 }
 
 .accordion__item p {
   color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 6px;
+  padding-bottom: 9px;
   margin: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 135%;
 }
 
@@ -2488,6 +2487,9 @@ button,
   .form {
     padding-top: 50px;
     padding-bottom: 125px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .form form {
@@ -2615,8 +2617,8 @@ button,
     margin-left: 10px;
   }
 
-  .accordion__item p {
-    font-size: 16px;
+  .accordion__list--contacts {
+    padding-left: 10px;
   }
 }
 
@@ -2868,9 +2870,6 @@ button,
   .form {
     padding-top: 50px;
     padding-bottom: 86px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .form form {

@@ -186,7 +186,10 @@
 
     &--contacts {
       min-width: 330px;
-      padding-left: 10px;
+
+      @media (max-width: ($vp-1920 - 1px)) {
+        padding-left: 10px;
+      }
 
       @media (max-width: ($vp-768 - 1px)) {
         padding-left: 0;
@@ -196,15 +199,14 @@
 
   &__item p {
     color: $color-white-transparent;
-    padding-bottom: 6px;
+    padding-bottom: 9px;
     margin: 0;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 135%;
 
     @media (max-width: ($vp-1920 - 1px)) {
-      font-size: 16px;
     }
 
     @media (max-width: ($vp-768 - 1px)) {
