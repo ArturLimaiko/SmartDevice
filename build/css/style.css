@@ -2203,7 +2203,7 @@ button,
 }
 
 [data-accordion=content] {
-  max-height: 0;
+  max-height: 100%;
   -webkit-transition: max-height 0.3s;
   -o-transition: max-height 0.3s;
   transition: max-height 0.3s;
@@ -2578,7 +2578,6 @@ button,
   }
 
   [data-accordion=content] {
-    max-height: 0;
     -webkit-transition: max-height 0.3s;
     -o-transition: max-height 0.3s;
     transition: max-height 0.3s;
