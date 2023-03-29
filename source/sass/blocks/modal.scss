@@ -50,16 +50,17 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+    background: rgba(3, 16, 27, 0.7);
   }
 
   &__content {
     position: relative;
     width: 500px;
     padding: 40px;
-    padding-top: 35px;
+    padding: 35px 40px 46px;
     max-height: 610px;
     background-color: $color-deep-sky-blue;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
 
     @include vp-767 {
       width: 100%;
@@ -149,6 +150,3 @@
     pointer-events: auto;
   }
 }
-
-
-

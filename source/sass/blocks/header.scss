@@ -10,6 +10,7 @@
 }
 
 .header__box {
+  display: flex;
   min-width: 35px;
 }
 
@@ -40,7 +41,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0 25px 0;
+  padding: 20px 0 25px;
   gap: 20px;
   width: 100%;
   max-width: 1320px;
@@ -167,6 +168,7 @@
   margin-right: 50px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-deep-sky-blue-light;
