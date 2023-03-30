@@ -278,7 +278,7 @@
     border: 1px solid $color-default-white;
     border-radius: 2px;
     left: -26px;
-    top: 5px;
+    top: 2px;
   }
 
   & input[type="checkbox"]:checked + span::after {
@@ -289,7 +289,7 @@
     background-image: url("../img/svg/checkmark.svg");
     background-repeat: no-repeat;
     left: -24px;
-    top: 10px;
+    top: 6px;
   }
 
   & input:hover + span::before,
