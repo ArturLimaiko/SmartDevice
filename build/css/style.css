@@ -2618,7 +2618,7 @@ button,
   }
 
   .form {
-    padding-top: 50px;
+    padding-top: 46px;
     padding-bottom: 125px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2636,7 +2636,7 @@ button,
   }
 
   .form p {
-    padding-bottom: 27px;
+    padding-bottom: 25px;
   }
 
   .form__background {
@@ -2655,6 +2655,7 @@ button,
 
   .form__question {
     padding-bottom: 8px;
+    margin-bottom: 0;
   }
 
   .form__checkbox label {
@@ -2664,8 +2665,6 @@ button,
 
   .main-wrapper {
     background-image: none;
-    padding-top: 45px;
-    padding-bottom: 125px;
   }
 
   .footer__wrapper {
@@ -2978,7 +2977,7 @@ button,
 
   .form__button {
     max-width: 270px;
-    margin-top: 21px;
+    margin-top: 0px;
   }
 
   .form__name input,
@@ -2989,8 +2988,13 @@ button,
     line-height: 22px;
   }
 
+  .form__question {
+    padding-bottom: 4px;
+  }
+
   .form__question textarea {
     min-width: 270px;
+    min-height: 182px;
   }
 
   .form__checkbox label {
