@@ -689,6 +689,7 @@ button,
   width: 100%;
   min-height: 100%;
   padding: 60px 40px;
+  padding-top: 291px;
 }
 
 .modal__overlay {
@@ -709,6 +710,8 @@ button,
   max-height: 610px;
   background-color: #00b2ff;
   margin-bottom: 64px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .modal__content form {
