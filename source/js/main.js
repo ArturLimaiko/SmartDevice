@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {changeTextButton} from './modules/accordion/button-text';
+import {initPhoneMask} from './modules/form-validate/phone-mask';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initAccordions();
+    initPhoneMask();
   });
 });
 

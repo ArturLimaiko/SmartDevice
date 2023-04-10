@@ -101,6 +101,7 @@
   display: inline-block;
   cursor: pointer;
   max-width: 720px;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-deep-sky-blue-light;

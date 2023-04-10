@@ -47,6 +47,10 @@
   max-width: 1320px;
   margin: 0 auto;
 
+  @media (max-width: ($vp-1440 - 1px)) {
+    padding: 9px 20px;
+  }
+
   @media (max-width: ($vp-1024 - 1px)) {
     justify-content: space-between;
     padding: 9px 51px;
@@ -186,6 +190,10 @@
   &:disabled {
     opacity: 0.5;
     pointer-events: none;
+  }
+
+  @media (max-width: ($vp-1440 - 1px)) {
+    margin-right: 0;
   }
 
   @media (max-width: ($vp-1024 - 1px)) {

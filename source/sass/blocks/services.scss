@@ -56,6 +56,10 @@
   padding-top: 31px;
   max-width: 1220px;
 
+  @media (max-width: ($vp-1440 - 1px)) {
+    gap: 40px;
+  }
+
   @media (max-width: ($vp-1024 - 1px)) {
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;

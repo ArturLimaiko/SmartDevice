@@ -90,6 +90,7 @@
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 18px;
+  user-select: none;
 
   @include hover-focus {
     border: 1px solid $color-deep-sky-blue-light;
