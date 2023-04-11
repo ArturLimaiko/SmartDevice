@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
 import {changeTextButton} from './modules/accordion/button-text';
-import {initPhoneMask} from './modules/form-validate/phone-mask';
+const inputsPhone = document.querySelectorAll('[data-phone-number]');
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,9 +25,76 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initAccordions();
-    initPhoneMask();
   });
 });
+
+const prefixNumber = (str) => {
+  if (str === '7') {
+    return '7 (';
+  }
+  if (str === '8') {
+    return '8 (';
+  }
+  if (str === '9') {
+    return '7 (9';
+  }
+  return '7 (';
+};
+
+inputsPhone.forEach((el) => el.addEventListener('input', () => {
+  const value = el.value.replace(/\D+/g, '');
+  const numberLength = 11;
+
+  let result;
+  if (el.value.includes('+8') || el.value[0] === '8') {
+    result = '';
+  } else {
+    result = '+';
+  }
+
+  for (let i = 0; i < value.length && i < numberLength; i++) {
+    switch (i) {
+      case 0:
+        result += prefixNumber(value[i]);
+        continue;
+      case 4:
+        result += ') ';
+        break;
+      case 7:
+        result += '-';
+        break;
+      case 9:
+        result += '-';
+        break;
+      default:
+        break;
+    }
+    result += value[i];
+  }
+  el.value = result;
+}));
+
+const forms = document.querySelectorAll('.form');
+
+if (document.querySelector('.form')) {
+  forms.forEach((form) => {
+    form.addEventListener('submit', (evt) => {
+      if (!(form.querySelector('[data-phone-number]').value.length < 18)) {
+        return;
+      } else {
+        evt.preventDefault();
+        showError(form.querySelector('[data-phone-number]'));
+      }
+    });
+  });
+}
+
+const showError = (elem) => {
+  elem.classList.add('error');
+  setTimeout(() => {
+    elem.classList.remove('error');
+  }, 1000);
+};
 
 // ---------------------------------
 

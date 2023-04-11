@@ -272,7 +272,7 @@
             <div class="form__tel">
               <label for="tel" data-validate-type="phone" data-on-input-validate data-message-base="Введите ваш телефон" data-message-extra="Номер введен не полностью" data-required>
                 <span class="visually-hidden">Телефон</span>
-                <input id="tel" type="text" name="tel" placeholder="Телефон" required>
+                <input id="tel" type="tel" name="tel" placeholder="Телефон" required data-phone-number>
               </label>
             </div>
             <div class="form__question" >
@@ -432,7 +432,7 @@
               <div class="form__tel form__tel--modal">
                 <label for="modal-tel" data-validate-type="phone" data-on-input-validate data-message-base="Введите ваш телефон" data-message-extra="Номер введен не полностью" data-required>
                   <span class="visually-hidden">Телефон</span>
-                  <input id="modal-tel" type="text" name="tel" placeholder="Телефон" required>
+                  <input id="modal-tel" type="tel" name="tel" placeholder="Телефон" required data-phone-number>
                 </label>
               </div>
               <div class="form__question form__question--modal">
